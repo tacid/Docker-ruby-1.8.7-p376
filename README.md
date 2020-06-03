@@ -14,5 +14,5 @@ Preinstalled:
 Image can be pulled from hub.docker.com
 
 `
-docker pull tacid/docker-ruby-1.8.7:latest
+docker pull tacid/ruby-1.8.7:latest
 `
