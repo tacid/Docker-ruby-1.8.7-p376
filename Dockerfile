@@ -16,10 +16,9 @@ RUN set -eux; \
         rm -rf /var/lib/apt/lists/*
 # skip installing gem documentation
 RUN set -eux; \
-        mkdir -p /srv/gration;\
         { \
                 echo 'gem: --no-rdoc --no-ri'; \
-        } >> /root/.gemrc
+        } >> /etc/gemrc
 
 # some of ruby's build scripts are written in ruby
 #   we purge system ruby later to make sure our final image uses what we just built
