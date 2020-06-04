@@ -66,6 +66,7 @@ RUN set -eux; \
         gem install rake -v '~>0.8.7' ;\
         gem install i18n -v '~>0.6.4' ;\
         gem install rails -v '~>2.3.18' ;\
+        gem install RedCloth -v '~>4.2.9' ;\
         gem install bundler -v '~>1.6.9' ;\
         apt-mark auto '.*' > /dev/null; \
         apt-mark manual $savedAptMark > /dev/null; \
