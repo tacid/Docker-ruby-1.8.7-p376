@@ -88,7 +88,7 @@ RUN set -eux; \
 ENV GEM_HOME /usr/local/bundle
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 \
         BUNDLE_APP_CONFIG="$GEM_HOME"
-ENV PATH $GEM_HOME/bin:$PATH
+ENV PATH $GEM_HOME/bin:/root/.rbenv/shims:/root/.rbenv/bin:$PATH
 # adjust permissions of a few directories for running "gem install" as an arbitrary user
 RUN mkdir -p "$GEM_HOME" && chmod 755 "$GEM_HOME"
 
